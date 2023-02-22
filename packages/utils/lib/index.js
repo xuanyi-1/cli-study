@@ -1,16 +1,11 @@
 const log=require('./log')
+const isDebug=require('./isDebug')
 
 
-if(process.argv.includes('--debug')||process.argv.includes('-d')){
-  log.level='verbose'
-}else{
-  log.level='info'
-}
 
-log.heading='帅哥脚手架'
 
-// log.addLevel()
 
 module.exports={
-  log
+  log,
+  isDebug
 }
