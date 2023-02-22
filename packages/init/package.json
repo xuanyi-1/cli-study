@@ -1,0 +1,25 @@
+{
+  "name": "@lyd/init",
+  "version": "0.0.0",
+  "description": "command init",
+  "author": "背着蓝书包的徐老师 <1677689444@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "scripts": {
+    "test": "node ./__tests__/init.test.js"
+  },
+  "dependencies": {
+    "@lyd/command": "^0.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   globs: [ 'packages/cli' ],
+0 silly argv   lernaVersion: '6.5.1',
+0 silly argv   '$0': 'lerna',
+0 silly argv   pkg: '@lyd/utils'
+0 silly argv }
+1 notice cli v6.5.1
+2 verbose rootPath /Users/xuyi/Desktop/脚手架/lyd-cli
+3 error FetchError: network timeout at: https://r.cnpmjs.org/@lyd%2futils
+3 error     at Timeout.<anonymous> (/usr/local/lib/node_modules/lerna/node_modules/minipass-fetch/lib/index.js:108:18)
+3 error     at listOnTimeout (node:internal/timers:559:17)
