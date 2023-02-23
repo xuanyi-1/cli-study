@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 
-const importLocal=require('import-local')
+import importLocal from "import-local";
+import { filename } from 'dirname-filename-esm';
+const __filename = filename(import.meta);
+import entry from "../lib/index.js";
 
-const entry=require('../lib/index')
 if (importLocal(__filename)){
 
 } else {

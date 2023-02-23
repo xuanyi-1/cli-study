@@ -1,6 +1,6 @@
 'use strict';
 
-const Command = require("@lyd/command");
+import  Command from "@lyd/command";
 
 class InitCommand extends Command {
 
@@ -28,4 +28,4 @@ function Init(instance){
 return new InitCommand(instance)
 }
 
-module.exports=Init
+export default Init

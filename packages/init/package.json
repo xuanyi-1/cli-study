@@ -20,6 +20,8 @@
     "test": "node ./__tests__/init.test.js"
   },
   "dependencies": {
-    "@lyd/command": "^0.0.0"
-  }
+    "@lyd/command": "^0.0.0",
+    "fs-extra": "^11.1.0"
+  },
+  "type": "module"
 }

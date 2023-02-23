@@ -1,5 +1,7 @@
-const log=require('npmlog')
-const isDebug=require('./isDebug')
+import log from "npmlog";
+
+import isDebug from "./isDebug.js";
+
 if(isDebug()){
     log.level='verbose'
   }else{
@@ -9,4 +11,5 @@ if(isDebug()){
   log.heading='帅哥脚手架'
   
   // log.addLevel()
-module.exports=log
+
+export default log

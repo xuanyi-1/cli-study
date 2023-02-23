@@ -46,4 +46,4 @@ postAction(){}
 
 }
 
-module.exports=Command
+export default Command

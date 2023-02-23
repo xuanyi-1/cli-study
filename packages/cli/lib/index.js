@@ -1,9 +1,14 @@
-const commander=require('commander')
-const createInitCommand=require('@lyd/init')
-const {log,isDebug}=require('@lyd/utils')
-const {program}=commander
-const semver=require('semver')
-const pkg=require('../package.json')
+import path from "node:path";
+import {program  } from "commander";
+import createInitCommand from "@lyd/init";
+import { log,isDebug } from "@lyd/utils";
+import { dirname } from 'dirname-filename-esm';
+import fse from "fs-extra";
+import semver from "semver";
+
+const __dirname = dirname(import.meta);
+const pkgPath=path.resolve(__dirname,'../package.json')
+const pkg=fse.readJsonSync(pkgPath)
 
 
 const LOWEST_NODE_VERSION='14.0.0'
@@ -30,7 +35,7 @@ process.on('uncaughtException',(e)=>{
  
 })
 
-module.exports=function(args){
+export default  function(args){
        log.info('version',pkg.version)
 program.name(Object.keys(pkg.bin)[0])
        .usage('<command> [options]')

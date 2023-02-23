@@ -18,5 +18,9 @@
   },
   "scripts": {
     "test": "node ./__tests__/command.test.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "fs-extra": "^11.1.0"
   }
 }
